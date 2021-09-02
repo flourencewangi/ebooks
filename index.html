@@ -1,0 +1,326 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>sweetcom bakery</title>
+    
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+       <script src="https://kit.fontawesome.com/ea566e39d9.js" crossorigin="anonymous"></script> 
+       <style> 
+         a{
+           text-decoration: none;
+         }
+         *{
+  margin: 0;
+  padding:0;
+  font-family: sans-serif;
+}
+  
+  .header{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(23.jpg);
+    background-position: center;
+    background-size: cover;
+    position:relative;
+  }
+  nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  nav img{
+    width:150px;
+  }
+  .nav-links{
+    flex: 1;
+    text-align: right;
+  }
+  .nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+  }
+  .nav-links ul li a{
+    color: navy;
+    font-size: +20px;
+    text-decoration: none;
+  }
+  .nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: navy;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+  .nav-links ul li:hover::after{
+    width: 100%;
+  }
+  .text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+  }
+  .text-box h1{
+    font-size: 62px;
+  }
+  .text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color:#fff;
+  }
+  .hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+  }
+  .hero-btn:hover{
+    border: 1px solid navy;
+    transition: 1s;
+  
+  }
+  nav.fa{
+    display: none;
+  }
+  @media(max-width:700px){
+    .text-box h1{
+      font-size: 20px;
+    }
+    .nav-links ul li{
+      display: block;
+    }
+    .nav-links{
+      position: absolute;
+      background: lavenderblush;
+      height: 10mv;
+      width: 200px;
+      top: 0;
+      right: -50px;
+      text-align: left;
+      z-index: 2;
+      transition: 1s;
+      
+    }
+    nav.fa{
+      display: block;
+      color: cyan;
+      margin: 20px;
+      font-size: 20px;
+      cursor:pointer;
+    }
+    .nav-links ul{
+      padding: 30px
+    }
+    .cta h1{
+      font-size: 24px;
+    }
+  }
+  
+  /*call to action*/
+  .cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(14.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+  }
+  /*footer*/
+  .footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+  }
+  .footer:h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+  }
+  .icons .fas,.fab{
+    color: navy;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+  }
+ .fas fa-heart{
+    color: red;
+  }
+               #slider figure{
+        position: relative;
+        width: 500%;
+        margin: 0;
+        left: 0;
+        animation: 20s slider infinite;
+      }
+      #slider figure img{
+        width: 20%;
+        float:left;
+      }
+      @keyframes slider{
+        0%{
+          left:0;
+        }
+      20%{
+      left:0;
+      }
+      25%{
+      left:100%;
+      }
+      
+      45%{
+      left:-100%;
+      }
+      
+      50%{
+      left:-200%;
+      }
+      
+      70%{
+      left:-200%;
+      }
+      75%{
+      left:-300%;
+      }
+      95%{
+      left:-300%;
+      }
+      100%{
+      left:-400%;
+      }
+      }
+       </style>
+    
+</head>
+    <body>
+      <div class="container">
+        <div class="navbar">
+          <img src="x.png" class="logo"><nav>
+              <div class="nav-links" id="navLinks">
+          <font color="navy"><font size="+2"> <i class="fa fa-window-close"
+              onclick="hideMenu()"></i>
+          </font>  </font><font size="-50px"><ul>
+            <li>
+                                   <a href="home.html"
+                                ">Home  <i class="fa fa-home" aria-hidden="true"></i> 
+                                   </a></li>
+
+                   <li><a href="gallery.html">
+                    products
+                    <i class="fas fa-shopping-cart"></i>
+                    </a>
+                   </li><li> <a href="home.html"> About us
+<i class="fas fa-address-card"></i>
+</a></li>
+              <li>  <a href="form.html">
+                        orders    <i class="fas fa-cart-plus"></i> </a> </li>
+                                   
+            </ul></font>
+            </div>
+         <font color="blue"> <font size="+20px"><i class="fas fa-bars" onclick="showMenu()"></i></font></font>
+          </nav>
+      </div></div>
+      <div class="row">
+        <div class="col-1">
+          <h2><font color="blue">Welcome to sweetCom bakery
+          Feel free to check out your favourite.</h2></font>
+          <br> <font color="green"><h3><b>Need some dessert inspo? We got you covered!<br>Check out our <a href="gallery.html"><font color="red">gallery</font></a><br>of sweetcom cakes and cup cakes we have previously done.</font></h3></b><br>
+          <h3>
+            we are located at;
+          </h3>
+          <p>Kireka hill off Kabakas Road
+          <br>Kinawataka plot 779
+          <br><br>
+          <b>Directions</b>
+          <br>
+            
+   <a href="https://www.google.com/maps/dir//Uganda+Institute+of+Information+and+Communcations+Technology,+P.O.Box+7187,+Kampala/@0.0233765,32.1927899,9z/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x177dbbe8dd20f149:0xb4e1993eafef262e!3e0?force=pwa&source=mlapk"><font size="+10px">
+    <i class="fas fa-directions"></i>
+    </font>
+    </a>
+  
+          <br>
+          Tel no.<br>
+         <a> +256757960349</a><br>
+         <a> +256786051732</a><br>
+          or 
+          Email us<br>
+       <a>flourencewangi@gmail.com</a></p>
+          <h4><font color="red">Taste it love it<b>
+            Feel the greatness
+          </h4></font>
+          </div>
+          </div><a href="form.html"><button type="button">Order Now</button>
+            <i class="fas fa-cart-plus"></i>
+          </a><br>
+        
+       <div id="slider">
+    <figure>
+
+      <img src="a.jpg">
+       <img src="ww.jpg">
+      <img src="v.jpg">
+     <img src="y.png">
+     <img src="gg.jpg">
+    </figure>
+  </div>
+
+      
+      <!.......footer....>
+
+  <section class="footer">
+    <h4>About Us</h4>
+    <p>Come to sweetcom bakery ,and feel the refreshment</p>
+          <p>
+      <div class="h2">
+        <center><h6>Want to see more of our delicious designs and stay up to date with the latest at Sweetcom cakes !
+        Link and follow us on social media</h6>
+       <i class="fas fa-file-import"></i>
+      </div></center>
+      </p>
+    
+    <div class="icons">
+          <font size="+3"> <i class=" fab fa-facebook"></i>
+   <i class="fab fa-twitter"></i>
+    <a href "https://flourencewangi.github.io/sweetcom-bakery/
+    "><i class="fas fa-globe"></i></a>
+  <i class="fab fa-instagram-square"></i>
+    </font></div><br>
+    
+    Made with<font color="red" size="+2"><i class="fas fa-heart"></i></font>
+    and greatness
+    
+    </section>
+    
+          <section class="cta">
+            <h1>Make orders from anywhere around the world</h1>
+            <a href="form.html" class="hero-btn">Contact us</a>
+          </section>
+          
+      <script>
+  var navLinks=document.getElementById("navLinks");
+  function showMenu(){
+  navLinks.style.right="0";}
+  function hideMenu(){
+  navLinks.style.right="-200px";}
+  </script>
+</body>
+
+</html>
