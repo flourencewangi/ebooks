@@ -1,7 +1,7 @@
 *{
   margin: 0;
   padding:0;
-  font-family: sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
   
   .header{
@@ -105,6 +105,7 @@
     }
     .row{
       flex-direction: column;
+      word-spacing: 2px;
       
     }
     nav.fa{
@@ -241,22 +242,13 @@
     padding-top: 100px;
     text-align: center;
   }
+ 
   .testimonial-col{
-    flex-basis: 44%;
-    border-radius: 10px;
-    margin-bottom: 5%;
-    text-align: left;
-    background: #fff3f3;
-    padding: 25px;
-    cursor: pointer;
-    display: flex;
-  }
-  .testimonials-col {
     flex-basis: 10%;
     border-radius: 10px;
     margin-bottom: 5%;
     text-align: left;
-    background: pink;
+    background: lavenderblush;
     padding: 100px 50px;
     cursor: pointer;
     display: flex;
