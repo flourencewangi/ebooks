@@ -50,14 +50,14 @@
   bottom: 10px;
   right: 10px;
   padding: 10px 20px;
-  background-color: darkgreen;
+  background-color: darkorange;
   color: white;
   cursor: pointer;
   border-radius: 2px;
 }
 .product-remove:hover{
   background-color: white;
-  color: darkgreen;
+  color: darkorange;
   font-weight: 600;
   border: 1px  solid seagreen;
 }
@@ -95,6 +95,9 @@
 }
 .cart-total a:hover{
   background-color: lavenderblush;
+}
+a{
+  text-decoration: none;
 }
 @media screen and(max-width:400px){
   .remove{
